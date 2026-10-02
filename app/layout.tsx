@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "@/lib/siteConfig";
-import RenditionSwitcher from "@/components/RenditionSwitcher";
 import SiteLayoutWrapper from "@/components/SiteLayoutWrapper";
 
 export const metadata: Metadata = {
@@ -64,7 +63,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <RenditionSwitcher />
         <a href="#main" className="skip-link">Skip to content</a>
         <SiteLayoutWrapper>{children}</SiteLayoutWrapper>
       </body>
