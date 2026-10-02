@@ -12,13 +12,6 @@ const nextConfig: NextConfig = {
     imageSizes: [32, 48, 64, 96, 128, 256, 384, 512, 640],
     qualities: [75, 85, 90, 95, 100],
   },
-  async redirects() {
-    return [
-      { source: "/rendition-1", destination: "/", permanent: false },
-      { source: "/rendition-2", destination: "/", permanent: false },
-      { source: "/rendition-3", destination: "/", permanent: false },
-    ];
-  },
 };
 
 export default nextConfig;
